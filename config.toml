@@ -1,0 +1,204 @@
+baseURL = "http://firkin.io/"
+languageCode = "en-us"
+title = "Firkin•io"
+theme = "hugo-future-imperfect"
+
+preserveTaxonomyNames = true
+paginate = 3
+disqusShortname = "firkin"
+googleAnalytics = ""
+pluralizeListTitles = false
+# Set the followings to true as part of your site SEO
+enableRobotsTXT = true
+canonifyURLs = true
+
+#
+# Important Params
+#
+[params]
+  # Sets the meta tag description
+  description          = "Firkin Software, Solutions, Coaching, and Consulting"
+  # Sets the navbarTitle that appears in the top left of the navigation bar
+  navbarTitle          = "Firkin•io"
+  # Sets where "View More Posts" links
+  viewMorePostLink     = "/blog/"
+
+#
+# Optional Params
+#
+  # Sets navbarTitle to match the section of the website
+  dynamicTitles        = true
+  # Sets RSS icons to appear on the sidebar with the social media buttons
+  rssAppearAtTop       = true
+  rssAppearAtBottom    = true
+  # Sets Social Media icons to appear on the sidebar
+  socialAppearAtTop    = true
+  socialAppearAtBottom = true
+  # Sets Categories to sort by number of posts instead of alphabetical
+  categoriesByCount    = true
+  # set to show or to hide categories in the sidebar
+  showSidebarCategories = true
+  # Sets Estimated Reading Time to appear in post headers
+  includeReadingTime   = true
+  # Sets the Favicon and Version for the site. Default support is for
+  # apple-touch-icon-precomposed.png, favicon.png, favicon.ico, and mstile.png.
+  # These are stored in the favicon folder. See the following for more information:
+  # https://github.com/audreyr/favicon-cheat-sheet
+  loadFavicon          = false
+  faviconVersion       = ""
+
+#
+# Social Sharing Parameters
+#
+  # Sets Social Share links to appear on posts
+  socialShare          = true
+  # Sets specific share to appear on posts (default behavior is to appear)
+  socialShareTwitter   = true
+  socialShareGoogleplus = false
+  socialShareFacebook  = true
+  socialShareReddit    = false
+  socialShareLinkedin  = true
+  socialShareStumbleupon = false
+  socialSharePinterest = true
+  socialShareEmail     = true
+
+#
+# Custom CSS and JS loading
+#
+  # Load custom CSS or JavaScript files. The variable is an array so that you
+  # can load multiple files if necessary. You can also load the standard theme
+  # files by adding the value, "default".
+  # customCSS            = ["default", "/path/to/file"]
+  # customJS             = ["default", "/path/to/file"]
+  customCSS            = ["default"]
+  customJS             = ["default"]
+
+  # options for highlight.js (version, additional languages, and theme)
+  disable_highlight = false # set to true to disable Highlight
+  highlightjsVersion = "9.11.0"
+  highlightjsCDN = "//cdn.bootcss.com"
+  highlightjsLang = ["r", "yaml", "css"]
+  highlightjsTheme = "github"
+  MathJaxCDN = "//cdn.bootcss.com"
+  MathJaxVersion = "2.7.1"
+
+#
+# Sidebar options
+#
+
+  # These are optional params related to the sidebar. They are recommended, but not
+  # required for proper functionality. HTML is supported within the params.
+[params.intro]
+  header    = "Firkin•io"
+
+  paragraph = "Technology, Solutions Strategy &amp; Coaching for Professionals &amp; Companies"
+
+  about     = "<bold>Firkin•io</bold> has provided individualized Coaching, Leadership, Architecture, and Technology consulting since 2009."
+
+  # This appears at the top of the sidebar above params.intro.header.
+  # A width of less than 100px is recommended from a design perspective.
+  [params.intro.pic]
+    src       = "/img/main/firkin-logo-512.png"
+    # Sets Image to be a cirlce
+    circle    = false
+    # Sets Image to be Imperfect's hexagon
+    imperfect = false
+    width     = "128"
+    alt       = "Firkin Logo"
+
+[params.postAmount]
+# Sets the number of recent posts to show in the sidebar. The default value is 5.
+    sidebar = 5
+
+
+#
+# Navbar Options
+#
+
+# Sets the menu items in the navigation bar
+# Identifier prepends a Font Awesome icon to the menu item
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  identifier = "fa fa-home"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  identifier = "fa fa-id-card-o"
+  weight = 2
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  identifier = "fa fa-newspaper-o"
+  weight = 3
+
+#[[menu.main]]
+#  name = "Itemized"
+#  url = "/itemized/"
+#  identifier = "fa fa-list"
+#  weight = 4
+
+[[menu.main]]
+  name = "Categories"
+  url = "/categories/"
+  identifier = "fa fa-sitemap"
+  weight = 5
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  identifier = "fa fa-envelope-o"
+  weight = 6
+
+# Sets Social Media icons to appear and link to your account. Value should be your
+# username unless otherwise noted. These are the icons affected by socialAppearAtTop
+# and socialAppearAtBottom.
+[social]
+  # Coding Communities
+  github           = "travis-a-hoffman"
+  gitlab           = ""
+  stackoverflow    = "" # User Number
+  bitbucket        = ""
+  jsfiddle         = ""
+  codepen          = ""
+  # Visual Art Communities
+  deviantart       = ""
+  flickr           = ""
+  behance          = ""
+  dribbble         = ""
+  # Publishing Communities
+  wordpress        = ""
+  medium           = ""
+  # Professional/Business Oriented Communities
+  linkedin         = "travishoffman"
+  linkedin_company = ""
+  foursquare       = ""
+  xing             = ""
+  slideshare       = ""
+  # Social Networks
+  facebook         = "travis.hoffman"
+  googleplus       = ""
+  reddit           = ""
+  quora            = ""
+  youtube          = ""
+  vimeo            = ""
+  whatsapp         = "" # WhatsApp Number
+    # WeChat and QQ need testing.
+    wechat         = ""
+    qq             = "" # User ID Number
+  instagram        = ""
+  tumblr           = ""
+  twitter          = "FirkinTravis"
+  skype            = ""
+  snapchat         = ""
+  pinterest        = ""
+  telegram         = ""
+  vine             = ""
+  googlescholar    = ""
+  orcid            = ""
+  researchgate     = ""
+  # Email
+  email            = ""

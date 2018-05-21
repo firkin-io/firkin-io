@@ -1,0 +1,25 @@
+task uploadFtp << {
+
+    // Upload the build static files with ftp to the server.
+    ant {
+        taskdef(name: 'ftp',
+                classname: 'org.apache.tools.ant.taskdefs.optional.net.FTP',
+                classpath: configurations.ftpAntTask.asPath)
+        ftp(server: "server_ip", userid: "page@host.com", password: "*********") {
+            fileset(dir: "Page/public/")
+        }
+    }
+}
+
+task hugoBuild(type: Exec) {
+
+    // Move to the dir of the hugo page.
+    workingDir = file('./Page/')
+    // Build final hugo page.
+    commandLine 'hugo'
+}
+
+task hugoPublish(dependsOn: ['hugoBuild', 'uploadFtp']) {
+
+    uploadFtp.mustRunAfter hugoBuild
+}
