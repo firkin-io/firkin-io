@@ -2,7 +2,7 @@
 author = "Travis Hoffman"
 categories = ["Architecture", "Uncertainty", "Complexity"]
 tags = ["firkin•guides"]
-date = "2018-05-06"
+date = "2018-06-06"
 description = "Architect solutions, even when requirements are unclear"
 featured = "uncertainty-01.png"
 featuredalt = "Uncertainty"

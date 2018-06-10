@@ -1,6 +1,6 @@
 baseURL = "http://firkin.io/"
 languageCode = "en-us"
-title = "Firkin•io"
+title = "firkin•io"
 theme = "hugo-future-imperfect"
 
 preserveTaxonomyNames = true
@@ -19,7 +19,7 @@ canonifyURLs = true
   # Sets the meta tag description
   description          = "Firkin Software, Solutions, Coaching, and Consulting"
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Firkin•io"
+  navbarTitle          = "firkin•io"
   # Sets where "View More Posts" links
   viewMorePostLink     = "/blog/"
 
@@ -59,8 +59,9 @@ canonifyURLs = true
   socialShareReddit    = false
   socialShareLinkedin  = true
   socialShareStumbleupon = false
-  socialSharePinterest = true
+  socialSharePinterest = false
   socialShareEmail     = true
+  socialShareInstagram = true
 
 #
 # Custom CSS and JS loading
